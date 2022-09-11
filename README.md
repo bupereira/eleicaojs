@@ -11,12 +11,15 @@ Aluno: Murilo Pereira
 Gerenciador de Eleição
 
 2 - Quais são as principais funcionalidades desta aplicação web a ser desenvolvida?
+
 Cadastros:
 - Zonas eleitorais
 - Eleitores
 - candidatos
+
 Movimento:
 - Votos
+
 Relatório: 
 - Resultado por Zona
 - Resultado Geral
