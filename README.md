@@ -1,10 +1,12 @@
-#eleicaojs
+# eleicaojs
 
-UTFPR - Universidade Tecnológica Federal do Paraná Especialização em Java 
-Disciplina: Frameworks Web - Angular 
-Aluno: Murilo Pereira
+- UTFPR - Universidade Tecnológica Federal do Paraná Especialização em Java 
+- Disciplina: Frameworks Web - Angular 
+- Aluno: Murilo Pereira
 
-1 - Qual é o tema da aplicação web referente ao projeto da disciplina? Gerenciador de Eleição
+1 - Qual é o tema da aplicação web referente ao projeto da disciplina? 
+
+Gerenciador de Eleição
 
 2 - Quais são as principais funcionalidades desta aplicação web a ser desenvolvida?
 
