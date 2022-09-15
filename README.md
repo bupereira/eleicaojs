@@ -1,6 +1,7 @@
 # eleicaojs
 
-- UTFPR - Universidade Tecnológica Federal do Paraná Especialização em Java 
+- UTFPR - Universidade Tecnológica Federal do Paraná 
+- Especialização em Java 
 - Disciplina: Frameworks Web - Angular 
 - Aluno: Murilo Pereira
 
