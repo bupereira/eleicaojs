@@ -25,4 +25,5 @@ Relatório:
 - Voto do Eleitor (apenas para fins de auditoria, totalmente não será utilizado para habilitar voto de cabresto).
 
 3 - Qual é o link do repositório no GitHub que será usado para armazenar o código-fonte do projeto? 
+
 https://github.com/bupereira/eleicaojs
