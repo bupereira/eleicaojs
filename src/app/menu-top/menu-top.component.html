@@ -1,0 +1,42 @@
+<!-- Dropdown Structure -->
+<ul id="dropdownCadastros" class="dropdown-content black">
+  <li><a href="#!">Zonas Eleitorais</a></li>
+  <li><a href="#!">Eleitores</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Candidatos</a></li>
+</ul>
+
+<ul id="dropdownRelatorios" class="dropdown-content black">
+  <li><a href="#!">Por Zona</a></li>
+  <li><a href="#!">Geral</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Voto do Eleitor</a></li>
+</ul>
+<!-- /Dropdown Structure -->
+
+<ul class="sidenav black dropdown-content" id="mobile-demo" #mobile>
+  <li><a href="#" class="flow-text white">Zonas</a></li>
+  <li><a href="#" class="flow-text white">Eleitores</a></li>
+  <li><a href="#" class="flow-text white">Candidatos</a></li>
+  <li><a href="#" class="flow-text white">Votos</a></li>
+  <li><a href="#" class="flow-text white">Rel.p/Zona</a></li>
+  <li><a href="#" class="flow-text white">Rel.Geral</a></li>
+  <li><a href="#" class="flow-text white">Rel.Voto</a></li>
+</ul>
+
+<nav>
+  <div class="nav-wrapper black">
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger dropdown-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+    <a href="#!" class="brand-logo"><img class="my-logo" width="15%" height="15%" src="../../assets/resources/images/brasao.jpg"></a>
+
+    <ul class="right hide-on-med-and-down " id="menuOptions">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdownRelatorios">Relatórios<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="votos.html">Votos</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdownCadastros">Cadastros<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
