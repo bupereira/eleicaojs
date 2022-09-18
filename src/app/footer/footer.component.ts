@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   author: string;
   year: number;
+  footerProportion: number;
   constructor() {
     this.author = "Murilo Pereira";
     this.year = new Date().getFullYear();
+    this.footerProportion = 50;
   }
 
   ngOnInit(): void {
