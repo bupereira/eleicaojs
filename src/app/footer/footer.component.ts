@@ -18,7 +18,4 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getLogoDetails() {
-    return "../../assets/resources/images/brasao.jpg";
-  }
 }
