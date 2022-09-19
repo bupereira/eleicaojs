@@ -8,7 +8,16 @@
   </div>
   <div class="footer-author">
     <div class="container">
-      &copy; UTFPR - {{ this.author }} - {{ this.year }} - Todos os direitos reservados
+      &copy; UTFPR - {{ this.autor }} - {{ this.year }} - Todos os direitos reservados
+    </div>
+    <div class="right">
+
+      <div>
+        <span style="font-weight: bold">{{
+          this?.currentDate | date: "HH:mm:ss"
+        }}</span>
+        - Latitude: {{ this.coords?.latitude }} e Longitude: {{ this.coords?.longitude }}
+      </div>
     </div>
   </div>
 </footer>
