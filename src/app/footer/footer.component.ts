@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,16 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  author: string;
+  @Input() autor: string;
   year: number;
   footerProportion: number;
+  coords: any;
+  currentDate: Date;
   constructor() {
-    this.author = "Murilo Pereira";
+    this.autor = "Murilo Pereira";
     this.year = new Date().getFullYear();
     this.footerProportion = 50;
+    this.currentDate = new Date();
   }
 
   ngOnInit(): void {
+    navigator.geolocation.getCurrentPosition((position) => {
+      this.coords = position.coords;
+    });
+    setInterval(() => {
+      this.currentDate = new Date();
+    }, 1000);
   }
 
 }
