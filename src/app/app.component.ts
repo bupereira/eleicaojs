@@ -8,7 +8,12 @@ import * as M from 'materialize-css';
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild('mobile') sideNav?: ElementRef;
+  autor: string;
   title = 'eleicaojs';
+
+  constructor() {
+    this.autor = "By Murilo Pereira"
+  }
 
   ngAfterViewInit(): void {
     M.Sidenav.init(this.sideNav?.nativeElement);

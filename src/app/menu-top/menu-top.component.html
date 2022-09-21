@@ -1,23 +1,27 @@
 <!-- Dropdown Structure -->
 <ul id="dropdownCadastros" class="dropdown-content black">
-  <li><a href="#!">Zonas Eleitorais</a></li>
-  <li><a href="#!">Eleitores</a></li>
+  <li><a routerLink="cadastro/zonas">Zonas Eleitorais</a></li>
   <li class="divider"></li>
-  <li><a href="#!">Candidatos</a></li>
+  <li><a routerLink="cadastro/eleitores">Eleitores</a></li>
+  <li class="divider"></li>
+  <li><a routerLink="cadastro/candidatos">Candidatos</a></li>
+  <li class="divider"></li>
 </ul>
 
 <ul id="dropdownRelatorios" class="dropdown-content black">
   <li><a href="#!">Por Zona</a></li>
+  <li class="divider"></li>
   <li><a href="#!">Geral</a></li>
+  <li class="divider"></li>
   <li class="divider"></li>
   <li><a href="#!">Voto do Eleitor</a></li>
 </ul>
 <!-- /Dropdown Structure -->
 
 <ul class="sidenav black dropdown-content" id="mobile-demo" #mobile>
-  <li><a href="#" class="flow-text white">Zonas</a></li>
-  <li><a href="#" class="flow-text white">Eleitores</a></li>
-  <li><a href="#" class="flow-text white">Candidatos</a></li>
+  <li><a routerLink="cadastro/zonas" class="flow-text white">Zonas</a></li>
+  <li><a routerLink="cadastro/eleitores" class="flow-text white">Eleitores</a></li>
+  <li><a routerLink="cadastro/candidatos" class="flow-text white">Candidatos</a></li>
   <li><a href="#" class="flow-text white">Votos</a></li>
   <li><a href="#" class="flow-text white">Rel.p/Zona</a></li>
   <li><a href="#" class="flow-text white">Rel.Geral</a></li>
