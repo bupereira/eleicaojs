@@ -1,14 +1,60 @@
 <div class="row">
-  <form class="col s12">
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="cod_zona" type="text" class="validate">
-        <label for="cod_zona">Codigo Zona Eleitoral</label>
+  <form class="col s8" #form="ngForm" (ngSubmit)="onSubmit(); form.resetForm()">
+    <fieldset formGroupName="formGroupZona">
+      <div class="input-field col s8">
+        <input id="codZona" name="codZona" type="text" class="validate" [(ngModel)]="this.zona.codZona" #codZona="ngModel"
+          pattern="(.|\s)*\S(.|\s)*" required>
+        <label for="codZona">Codigo Zona Eleitoral</label>
       </div>
-      <div class="input-field col s6">
-        <input id="descricao_zona" type="text" class="validate">
-        <label for="descricao_zona">Descricao Zona (endereco, detalhes)</label>
+      <div class="input-field col s8">
+        <input id="descZona" name="descZona" type="text" class="validate" [(ngModel)]="this.zona.descZona" #descZona="ngModel"
+        pattern="(.|\s)*\S(.|\s)*" required>
+        <label for="descZona">Descricao Zona (endereco, detalhes)</label>
       </div>
-    </div>
+      <div class="red-text" [hidden]="codZona.valid || codZona.untouched">
+        Informe codigo da zona eleitoral.
+      </div>
+      <div class="red-text" [hidden]="descZona.valid || descZona.untouched">
+        Informe descricao da zona eleitoral.
+      </div>
+      <button class="btn waves-effect waves-light darken-4" type="submit"
+        [disabled]="!form.valid">Salvar
+      </button>
+    </fieldset>
   </form>
+
+</div>
+<h5>Zonas Eleitorais</h5>
+<table class="highlight" *ngIf="zonas && zonas!.length > 0">
+  <thead>
+    <tr>
+      <th>Codigo Zona</th>
+      <th>Descricao Zona</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let z of zonas">
+      <td>{{ z.codZona }}</td>
+      <td>{{z.descZona }}</td>
+      <td class="right">
+        <a>
+          <i class="material-icons my-icon-size" (click)="onEdit(z)">edit</i>
+        </a>
+        <a>
+          <i class="material-icons my-icon-size" (click)="onDelete(z.codZona)">delete</i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="!zonas || zonas!.length == 0">
+  <div class="row">
+    <div class="center-align">
+      <i class="col s12 material-icons large">mood_bad</i>
+      <span class="col s12 flow-text"
+        >Nenhuma zona cadastrada.</span
+      >
+    </div>
+  </div>
 </div>
