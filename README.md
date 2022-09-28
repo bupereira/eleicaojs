@@ -29,8 +29,9 @@ Relatório:
 https://github.com/bupereira/eleicaojs
 
 Apenas o cadastro de zonas eleitorais funciona no momento, embora haja roteamento para os outros cadastros também.
-Checklist de funções atendidas até o momento:
-OK    Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
+Checklist de funções atendidas até o momento:  
+
+OK    Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.  
 OK    Usar componentes de algum framework CSS (Bootstrap, Materialize ou outro).
 OK    Apresentar as telas com layout responsivo usando ou não algum framework CSS.
 OK    Construir páginas web com o conceito de componentes. 
